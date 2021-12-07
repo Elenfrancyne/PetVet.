@@ -1,0 +1,35 @@
+@model List<ItemAgenda>
+@{
+    ViewData["Title"] = "Listagem de Agendamentos já realizados: ";
+}
+
+<h3>@ViewData["Title"]</h3>
+
+<Table border="1">
+    <thead>
+        <tr>
+            <th> Nome do Cliente</th>
+            <th>Telefone</th>
+            <th>Descrição</th>
+            <th>Animal</th>
+            <th>Serviço</th>
+            <th>Data</th>
+        </tr>
+    </thead>
+
+    <tbody>
+        @foreach (ItemAgenda item in Model)
+        {
+            <tr>
+                <td>@item.Nome</td>
+                <td>@item.Telefone</td>
+                <td>@item.Descricao</td>
+                <td>@item.Animal</td>
+                <td>@item.Necessidade</td>
+                <td>@item.Data</td>
+            </tr>
+        }
+        
+    </tbody>
+</Table>
+<a href="/Home/Agendamento">Faça o seu agendamento.</a>

@@ -1,0 +1,27 @@
+Script em SQL
+
+I -      Criar Tabela:
+
+ CREATE TABLE  PreAgendamento (
+                                                    nome  varchar( 200),
+                                                    data date varchar(10),
+                                                    telefone  varchar (15),
+                                                    animal varchar(15),
+                                                    necessidade(20),
+                                                    descricao (15)
+                                                     );
+
+
+II - Inserir Registros:
+
+INSERT INTO PreAgendamento (nome, datadate, telefone, animal, necessidade, descricao)VaLUES('Helena', '05/07/2021', '43984348307', 'Cachorro', 'Banho', 'Porte médio');
+
+
+
+III-Listar Registros:
+
+SELECT *FROM PreAgendamento;
+
+
+
+                                                                                                                                                                         
